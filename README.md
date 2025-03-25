@@ -1,6 +1,6 @@
 # I Love You 3000 Generator ❤️
 
-**(A special little something for my dearest partner**
+**(A special little something for my dearest partner)**
 
 ---
 
