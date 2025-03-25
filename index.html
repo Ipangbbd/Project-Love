@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You 3000 Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Name Input Screen -->
+        <div id="nameInputScreen" class="name-input-container">
+            <div class="header">
+                <h1 class="title">I <span class="heart">❤</span> You 3000</h1>
+            </div>
+            <div class="card">
+                <div class="gif-container">
+                    <img src="assets/milky-and-mocha.gif" alt="Milk and Mocha bears">
+                </div>
+                <p class="text-center mb-4">Please enter your name to begin:</p>
+                <input type="text" id="userName" class="form-control" placeholder="Your name...">
+                <button id="submitName" class="btn btn-love">Start Loving!</button>
+            </div>
+        </div>
+        
+        <!-- Loading Screen -->
+        <div id="loadingScreen" class="loading-screen" style="display: none;">
+            <div class="gif-container">
+                <img src="assets/mocha-bear.gif" style="width: 50%;" alt="Loading...">
+            </div>
+            <div class="loading-text">Loading...</div>
+        </div>
+        
+        <!-- Main Content (hidden initially) -->
+        <div id="mainContent" style="display: none;">
+            <div class="header">
+                <h1 class="title">I <span class="heart">❤</span> You 3000 Generator</h1>
+                <h2 id="greeting" class="animate__animated animate__fadeIn"></h2>
+            </div>
+            
+            <div class="card">
+                <div class="gif-container">
+                    <img src="assets/milk-and-mocha.gif" style="width: 45%;">
+                </div>
+                
+                <div class="text-center mb-4">
+                    <p>Click the button below to see how much you're I Love You!</p>
+                    <button id="generatePoem" class="btn btn-love">How much I love you...</button>
+                </div>
+                
+                <div id="poemDisplay" class="poem-display animate__animated animate__fadeIn">
+                    Your love poem will appear here...
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        Made with <span class="heart">❤</span> for you
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
